@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Jokes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Monoton');
+        body{
+            background-image: url(jokes.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .jumbotron, .jokes{
+            box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+         }
+       
+         h2{
+            font-family: 'Monoton', cursive;
+            color:#9A0306;
+            text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+               word-spacing: 15px;
+               letter-spacing: 2px;
+         }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+            <h2 class="text-center mb-5 mt-2 display-4">JOKES APPLICATION</h2>
+         <div class="jumbotron" style="width:50% ; margin:0 auto">
+            <form action="#">
+                <div class="form-group">
+                    <label for="number" class="from-control"><strong>Check Of Jokes :</strong></label>
+                    <input type="number" name="" id="number" class="form-control" placeholder="Type A Number For Jokes">
+                </div>
+                <button type="submit" class="btn btn-block btn-primary" id="btn">Get Jokes</button>
+            </form>
+       </div>
+
+       <ul class="list-unstyled jokes mt-5" style="width:60%; margin:0 auto">
+
+       </ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
